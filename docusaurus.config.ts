@@ -1,24 +1,32 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: '小杨之家',
-  tagline: '欢迎来到这里',
+  title: 'My Home',
+  tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
+  // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  organizationName: 'facebook', // GitHub org/user name
-  projectName: 'docusaurus', // GitHub repo name
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -27,11 +35,15 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -43,13 +55,12 @@ const config: Config = {
   ],
 
   themeConfig: {
-    hideableSidebar: true,
+    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      hideOnScroll: true,
-      title: '首页',
+      title: 'My Site',
       logo: {
-        alt: '小杨之家 Logo',
+        alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -57,9 +68,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '教程',
+          label: 'Tutorial',
         },
-        { to: '/blog', label: '博客', position: 'left' },
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -71,16 +82,16 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: '文档',
+          title: 'Docs',
           items: [
             {
-              label: '指南',
+              label: 'Tutorial',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: '社区文档',
+          title: 'Community',
           items: [
             {
               label: 'Stack Overflow',
@@ -91,21 +102,21 @@ const config: Config = {
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
-              label: '我的 GitHub',
-              href: 'https://github.com/notasmartbot',
+              label: 'Twitter',
+              href: 'https://twitter.com/docusaurus',
             },
           ],
         },
         {
-          title: '其他',
+          title: 'More',
           items: [
             {
-              label: '博客',
+              label: 'Blog',
               to: '/blog',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/notasmartbot',
+              href: 'https://github.com/facebook/docusaurus',
             },
           ],
         },
