@@ -83,8 +83,10 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
+    hideableSidebar: true,
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
+      hideOnScroll: true,
       title: '首页',
       logo: {
         alt: '小杨之家 Logo',
