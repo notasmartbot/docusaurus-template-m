@@ -85,9 +85,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: '首页',
       logo: {
-        alt: 'My Site Logo',
+        alt: '小杨之家 Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -95,9 +95,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '教程',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: '博客', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -109,16 +109,16 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: '文档',
           items: [
             {
-              label: 'Tutorial',
+              label: '指南',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: '社区文档',
           items: [
             {
               label: 'Stack Overflow',
@@ -129,21 +129,21 @@ const config: Config = {
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: '我的github',
+              href: 'https://github.com/notasmartbot',
             },
           ],
         },
         {
-          title: 'More',
+          title: '其他',
           items: [
             {
-              label: 'Blog',
+              label: '博客',
               to: '/blog',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/notasmartbot',
             },
           ],
         },
@@ -159,7 +159,7 @@ const config: Config = {
 
 export default config;
 ',
-    locales: ['en'],
+    locales: ['zh-Hans'],
   },
 
   presets: [
