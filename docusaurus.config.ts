@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Home',
-  tagline: '中文很酷',
+  title: '小杨的家',
+  tagline: '不大但是很酷',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -68,9 +68,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '指南',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: '博客', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -82,16 +82,16 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: '文档',
           items: [
             {
-              label: 'Tutorial',
+              label: '指南',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: '社区指南',
           items: [
             {
               label: 'Stack Overflow',
@@ -108,7 +108,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'More',
+          title: '其他',
           items: [
             {
               label: 'Blog',
@@ -116,7 +116,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://https://github.com/notasmartbot',
             },
           ],
         },
